@@ -1,3 +1,2 @@
-#!/bin/bash
-export PYFILE=zen.py
-python3 $PYFILE
+#!/usr/bin/python3
+import zen
