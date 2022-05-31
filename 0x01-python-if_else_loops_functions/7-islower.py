@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 def islower(c):
-    if c.islower():
-        return True
+    if c.isalpha():
+        if c.islower():
+            return True
+        else:
+            return False
     else:
-        return False
+        return "Traceback (most recent call last): "
