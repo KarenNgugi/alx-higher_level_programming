@@ -4,6 +4,6 @@ def safe_print_integer(value):
         if value >= 0 or value < 0:
             print("{:d}".format(value))
             is_digit = True
-    except:
+    except Exception:
         is_digit = False
     return is_digit
