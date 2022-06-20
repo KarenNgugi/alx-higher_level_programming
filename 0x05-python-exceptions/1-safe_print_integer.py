@@ -1,11 +1,9 @@
 #!/usr/bin/python3
 def safe_print_integer(value):
-    isDigit = True
     try:
-        if str(abs(value)).isdigit():
+        if value >= 0 or value < 0:
             print("{:d}".format(value))
-        else:
-            isDigit = False
-        return isDigit
-    except TypeError:
-        pass
+            is_digit = True
+    except:
+        is_digit = False
+    return is_digit
