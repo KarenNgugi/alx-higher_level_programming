@@ -2,6 +2,8 @@
 """
 module documentation
 """
+
+
 class Square:
     """
     Empty Square class
