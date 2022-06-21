@@ -3,6 +3,7 @@
 module documentation
 """
 
+
 class Square:
     """
     Square documentation
