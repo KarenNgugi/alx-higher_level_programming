@@ -3,10 +3,9 @@
 module documentation
 """
 
-
 class Square:
     """
-    Square class
+    Square documentation
     """
     def __init__(self, size=0):
         try:
@@ -21,3 +20,6 @@ class Square:
             print("size must be an integer")
         except ValueError:
             print("size must be >= 0")
+
+    def area(self):
+        return self.__size * self.__size
