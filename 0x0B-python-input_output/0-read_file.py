@@ -8,6 +8,6 @@ def read_file(filename=""):
     """
     reads text file and prints to stdout
     """
-    with open(filename, encoding="utf-8") as f:
+    with open(filename, mode="r", encoding="utf-8") as f:
         for line in f:
             print(line)
