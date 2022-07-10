@@ -105,11 +105,17 @@ class Rectangle(Base):
         return self.__width * self.__height
 
     def display(self):
+        res = ""
+        for row in range(self.__y - 1):
+            print("\n")
         for row in range(self.__height):
-            print("#" * self.__width)
+            res += (" " * self.__x) + ("#" * self.__width) + "\n"
+        print(res[:-1])
 
     def __str__(self):
         result1 = "[Rectangle] (" + str(self.id) + ") "
         result2 = str(self.__x) + "/" + str(self.__y) + " - "
         result3 = str(self.__width) + "/" + str(self.__height)
         return result1 + result2 + result3
+
+    def update(self, *args):
