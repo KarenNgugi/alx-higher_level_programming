@@ -3,6 +3,7 @@
 base module
 """
 
+
 class Base:
     """
     base class
@@ -13,7 +14,7 @@ class Base:
 
     def __init__(self, id=None):
         global __nb_objects
-        if id != None:
+        if id is not None:
             self.id = id
         else:
             __nb_objects += 1
