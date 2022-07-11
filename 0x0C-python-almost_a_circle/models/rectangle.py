@@ -139,7 +139,7 @@ class Rectangle(Base):
         print width number and height number of '#'
         """
         res = ""
-        for row in range(self.__y - 1):
+        for row in range(self.__y):
             print("\n")
         for row in range(self.__height):
             res += (" " * self.__x) + ("#" * self.__width) + "\n"
