@@ -143,7 +143,7 @@ class Rectangle(Base):
             print("\n")
         for row in range(self.__height):
             res += (" " * self.__x) + ("#" * self.__width) + "\n"
-        print(res[:-1])
+        print(res)
 
     def __str__(self):
         """
