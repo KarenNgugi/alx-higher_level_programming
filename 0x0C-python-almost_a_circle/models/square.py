@@ -10,6 +10,9 @@ class Square(Rectangle):
     square class inherits from Rectangle class
     """
     def __init__(self, size, x=0, y=0, id=None):
+        """
+        initializes using Rectangle class
+        """
         super().__init__(size, size, x, y, id)
         self.id = self.id
         self.__width = size
@@ -18,6 +21,9 @@ class Square(Rectangle):
         self.__y = y
 
     def __str__(self):
+        """
+        returns string representation
+        """
         result1 = "[Square] (" + str(self.id) + ") "
         result2 = str(self.__x) + "/" + str(self.__y) + " - "
         result3 = str(self.__width)
@@ -25,10 +31,16 @@ class Square(Rectangle):
 
     @property
     def size(self):
+        """
+        returns value of size
+        """
         return self.__width
 
     @size.setter
     def size(self, size):
+        """
+        sets value of size
+        """
         if type(size) == int:
             if size >= 0:
                 self.__width = size
@@ -39,6 +51,9 @@ class Square(Rectangle):
             raise TypeError("width must be an integer")
 
     def update(self, *args, **kwargs):
+        """
+        updates specified attributes
+        """
         if len(args) > 0:
             if len(args) >= 1:
                 if type(args[0]) == int:
@@ -109,6 +124,9 @@ class Square(Rectangle):
                     raise TypeError("y must be an integer")
 
     def to_dictionary(self):
+        """
+        returns dictionary representation of Square
+        """
         my_dict = {}
         my_dict['id'] = self.id
         my_dict['size'] = self.__width
