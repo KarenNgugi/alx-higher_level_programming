@@ -203,3 +203,12 @@ class Rectangle(Base):
                         raise ValueError("y must be >= 0")
                 else:
                     raise TypeError("y must be an integer")
+
+    def to_dictionary(self):
+        my_dict = {}
+        my_dict['id'] = self.id
+        my_dict['width'] = self.__width
+        my_dict['height'] = self.__height
+        my_dict['x'] = self.__x
+        my_dict['y'] = self.__y
+        return my_dict

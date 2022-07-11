@@ -18,3 +18,14 @@ class Base:
         else:
             __nb_objects += 1
             self.id = __nb_objects
+
+    def to_json_string(list_dictionaries):
+        import json
+
+        if list_dictionaries is None:
+            return "[]"
+        else:
+            return json.dumps(list_dictionaries)
+
+    def save_to_file(cls, list_objs):
+        pass
