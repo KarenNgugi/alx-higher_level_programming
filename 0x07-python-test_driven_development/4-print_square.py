@@ -8,7 +8,7 @@ def print_square(size):
     """
     Prints square of length 'size'
     """
-    if type(size) != int and type(size) != float:
+    if type(size) != int:
         raise TypeError("size must be an integer")
     if size < 0:
         raise ValueError("size must be >= 0")
