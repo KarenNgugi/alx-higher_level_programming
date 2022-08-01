@@ -1,0 +1,27 @@
+======================
+"5-text_indentation.py
+======================
+
+Import
+======
+
+>>> indent = __import__('5-text_indentation').text_indentation
+
+Usage
+=====
+
+>>> indent()
+Traceback (most recent call last):
+TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+>>> indent(1)
+Traceback (most recent call last):
+TypeError: text must be a string
+
+>>> indent(None)
+Traceback (most recent call last):
+TypeError: text must be a string
+
+>>> indent(True)
+Traceback (most recent call last):
+TypeError: text must be a string
