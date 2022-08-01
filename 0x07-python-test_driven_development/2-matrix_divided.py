@@ -8,6 +8,14 @@ def matrix_divided(matrix, div):
     """
     divides each element in a matrix by div
     """
+    if matrix == []:
+        raise TypeError("matrix must be a matrix (list of lists)\
+ of integers/floats")
+
+    if ((len(matrix) == 0) and (len(matrix[0]) == 0)):
+        raise TypeError("matrix must be a matrix (list of lists)\
+ of integers/floats")
+
     for row in matrix:
         for element in row:
             if type(element) != int and type(element != float):
