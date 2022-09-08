@@ -17,4 +17,7 @@
 ### 13. [AirBnb clone - the console](https://github.com/KarenNgugi/AirBnB_clone)
 ### 14. [SQL - introduction](https://github.com/KarenNgugi/alx-higher_level_programming/tree/master/0x0D-SQL_introduction)
 ### 15. [SQL - more queries](https://github.com/KarenNgugi/alx-higher_level_programming/tree/master/0x0E-SQL_more_queries)
-### 16. [AirBnb clone -  web static](https://github.com/KarenNgugi/web_static )
+### 16. [AirBnb clone -  web static](https://github.com/KarenNgugi/web_static)
+### 17. JavaScript - warm up
+### 18. JavaScript - objects, scopes, closures
+### 19. Python - object-relational mapping
