@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""
+0-select_states: lists all states in database table
+"""
+
 
 import MySQLdb
 import sys
