@@ -16,7 +16,7 @@ if __name__ == "__main__":
       port=3306)
     cur = db.cursor()
     cur.execute("SELECT * FROM states WHERE name LIKE \
-        %s", sys.argv[4])
+        %s ORDER BY id", sys.argv[4])
     results = cur.fetchall()
     for result in results:
         print(result)
