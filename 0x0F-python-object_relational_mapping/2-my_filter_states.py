@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-1-filter_states: filters states starting with 'N'
+2-my_filter_states: select statess matching argument
 """
 
 
